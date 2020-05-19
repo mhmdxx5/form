@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+        <title>FORM</title>
+    </head>
+    <body>
+        <div id="wrapper">
+            <form action="http://html5-book.co.il/teach/forms/get_form2.php" method="get">
+                <div class="form-group">
+                    <label>
+                        Email address
+                        <input type="email" name="mail" class="form-control" aria-describedby="emailHelp" placeholder="email" required>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>
+                        Password
+                        <input type="password" name="pass" class="form-control" placeholder="password" pattern="(?=.*[A-Z]).{8,}" title="at least 8 , must be at least one capital latter" required>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        FullName
+                        <input type="text" name="fullName" class="form-control" placeholder="FullName" pattern="^[a-zA -z]+ [a-zA -z]+$" required>
+                    </label>
+                </div>
+
+                <div>
+                    <label>
+                        Website
+                        <input type="url" name="website" class="form-control" placeholder="Website" required>
+                    </label>
+                </div>
+
+                <div>
+                    <label>
+                        phone
+                        <input type="tel" name="phone" class="form-control" placeholder="phone" pattern="^[\d\. \-]+$" minlength="9" maxlength="10" required>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        Coffee:
+                        <input type="number" class="form-control" name="coffee" placeholder="Coffee" min="0" required>
+                    </label>
+                </div>
+
+                <div>
+                    <label>
+                        Temperature:
+                        <input type="range" name="temper" class="custom-range" placeholder="Temperature" required>
+                    </label>
+                </div>
+
+                <div>
+                    <label>
+                        Address:
+                        <textarea name="address" rows="2" cols="30" class="form-control" required>
+                        </textarea>
+                    </label>
+                </div>
+                <span>intersts:</span>
+                <div class="custom-control custom-checkbox">
+
+                    <input type="checkbox" class="custom-control-input" id="customCheck1" name="interests[]" value="coding">
+                    <label class="custom-control-label" for="customCheck1">Coding</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck1" name="interests[]" value="ps">
+                    <label class="custom-control-label" for="customCheck1">ps</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck1" name="interests[]" value="watching">
+                    <label class="custom-control-label" for="customCheck1">watching</label>
+                </div>
+                <span>gender:</span>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio1" name="gender" class="custom-control-input" value="male">
+                    <label class="custom-control-label" for="customRadio1">male</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio2" name="gender" class="custom-control-input" value="female">
+                    <label class="custom-control-label" for="customRadio2">female</label>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="validationTooltip04">age:</label>
+                    <select class="custom-select" id="validationTooltip04" required name="age">
+                        <option selected disabled value="">Choose...</option>
+                        <option value="10-15">10-15</option>
+                        <option value="15-20">15-20</option>
+                        <option value="20+">20+</option>
+                    </select>
+                    <div class="invalid-tooltip">
+                        Please select a valid state.
+                    </div>
+                </div>
+
+
+
+
+                <button type="submit" value="send" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        
+          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -1,0 +1,13 @@
+*{
+    margin:0;
+    padding:0;
+}
+header, main, footer, nav, aside, section, div, article {
+    display: block;
+}
+#wrapper {
+   display: flex;
+   justify-content: center;
+}
+
+
